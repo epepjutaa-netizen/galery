@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f2eb">
+  <title>Buka Ruang Cerita</title>
+  <style>
+    :root { color-scheme: light; --paper: #f6f2eb; --ink: #28221f; --muted: #8e8379; --rose: #a85d55; }
+    * { box-sizing: border-box; }
+    body { display: grid; min-width: 320px; min-height: 100vh; margin: 0; padding: 20px; place-items: center; background: radial-gradient(ellipse at 50% 24%, rgba(232,216,197,.55), transparent 45%), var(--paper); color: var(--ink); font-family: "DM Sans", Arial, sans-serif; }
+    main { width: min(440px, 100%); padding: 32px; border: 1px solid rgba(52,43,38,.13); border-radius: 12px; background: rgba(255,255,255,.65); box-shadow: 0 18px 55px rgba(58,42,32,.09); text-align: center; }
+    .heart { display: grid; width: 43px; height: 43px; margin: 0 auto 16px; border: 1px solid rgba(168,93,85,.3); border-radius: 50%; color: var(--rose); font-size: 19px; place-items: center; }
+    h1 { margin: 0 0 10px; font-family: Georgia, serif; font-size: 30px; font-weight: 500; }
+    p { color: var(--muted); font-size: 12px; line-height: 1.8; }
+    ol { padding-left: 20px; color: var(--ink); font-size: 11px; line-height: 1.9; text-align: left; }
+    a { color: var(--rose); }
+    .button { display: inline-flex; min-height: 43px; align-items: center; justify-content: center; margin-top: 12px; padding: 0 18px; border-radius: 6px; background: var(--ink); color: #fff; font-size: 11px; font-weight: 600; text-decoration: none; }
+    .button:hover { background: var(--rose); }
+    @media(max-width:420px) { main { padding: 25px 20px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="heart" aria-hidden="true">♡</div>
+    <h1>Ruang Cerita</h1>
+    <p>Halaman ini dibuka langsung sebagai berkas. Fitur login memerlukan PHP, jadi galeri tidak dapat digunakan dengan membuka berkas melalui <code>file://</code>.</p>
+    <ol>
+      <li>Buka XAMPP Control Panel.</li>
+      <li>Tekan <strong>Start</strong> pada Apache.</li>
+      <li>Buka halaman galeri lewat alamat di bawah ini.</li>
+    </ol>
+    <a class="button" href="http://localhost/putrarpl/web%20galeri/">Buka login galeri</a>
+    <p>Jika alamat belum terbuka, pastikan Apache sudah berstatus aktif.</p>
+  </main>
+</body>
+</html>
